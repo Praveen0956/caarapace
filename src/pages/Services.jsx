@@ -173,18 +173,8 @@ export default function Services(){
           ))}
         </div>
 
-        {/* Decorative Badges */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          <div className="bg-white px-6 py-3 rounded-full shadow-lg border-2 border-red-200 hover:border-red-500 transition-all hover:scale-105">
-            <span className="text-red-600 font-bold flex items-center gap-2">
-              <Sparkles className="w-4 h-4" />
-              Chef's Kiss Quality ✨
-            </span>
-          </div>
-          <div className="bg-white px-6 py-3 rounded-full shadow-lg border-2 border-red-200 hover:border-red-500 transition-all hover:scale-105">
-            <span className="text-red-600 font-bold">Main Character Energy 🔥</span>
-          </div>
-        </div>
+        {/* *** removed the two decorative badges per your request *** */}
+
       </section>
 
       {/* Process Section - FIXED RED GRADIENT */}

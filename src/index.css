@@ -531,3 +531,190 @@ body {
   .inline-reveal .inline-reveal-panel { padding-left: 12px; padding-right: 12px; }
   .inline-reveal .image-card img, .inline-reveal .image-card { height: 12rem; }
 }
+
+/* MapScroller: layout + spacing + marker + progress */
+.map-scroller {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 24px;
+}
+
+/* container for the svg (left side) */
+.map-svg-wrap {
+  width: 380px;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+}
+
+/* grid area where cards live (to the right of svg) */
+.map-grid {
+  position: relative;
+  /* push content right to make room for svg zigzag */
+  padding-left: 420px;
+}
+
+/* each node */
+.map-node { display: block; }
+
+/* marker style (circle) — number bubble */
+.map-bubble {
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+/* tuned card sizes */
+.map-row .p-6 { max-width: 820px; }
+
+/* progress pill */
+.progress-pill { height: 10px; border-radius: 999px; overflow: hidden; background: rgba(239,68,68,0.06); }
+.progress-pill > div { height: 100%; }
+
+/* responsive adjustments */
+@media (max-width: 1100px) {
+  .map-svg-wrap { width: 260px; }
+  .map-grid { padding-left: 300px; }
+}
+@media (max-width: 900px) {
+  .map-svg-wrap { display: none; } /* hide svg on small screens (cards stack vertically) */
+  .map-grid { padding-left: 0; }
+  .map-row { flex-direction: column; gap: 12px; }
+  .marker-wrap { display: none; }
+}
+
+/* -----------------------
+   Custom responsive & helper styles for mobile
+   Paste at the END of src/index.css
+   ----------------------- */
+
+:root{
+  --brand: #e11d48; /* red-600-ish */
+  --brand-600: #ef4444;
+  --card-bg: #fff6f6;
+  --max-w-site: 1200px;
+}
+
+/* Inline reveal panel small-screen tweaks (fixes the error you saw) */
+.inline-reveal .inline-reveal-inner {
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .inline-reveal .inline-reveal-inner {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    grid-template-columns: 1fr !important; /* force single column */
+  }
+  .inline-reveal img { height: 220px; object-fit: cover; width: 100%; }
+}
+
+/* Map scroller styles */
+.map-scroller {
+  position: relative;
+  padding-left: 3.5rem;
+  padding-right: 1rem;
+}
+.map-scroller .map-line {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  bottom: 2rem;
+  width: 6px;
+  background: linear-gradient(180deg, rgba(239,68,68,0.95), rgba(236,72,153,0.75));
+  border-radius: 999px;
+  filter: blur(0.6px);
+  opacity: 0.95;
+  transform-origin: top left;
+  transition: transform .35s ease;
+  box-shadow: 0 6px 30px rgba(236,72,153,0.06);
+}
+
+/* Node bubble & card */
+.map-scroller .map-node {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin: 2.5rem 0;
+  position: relative;
+}
+.map-scroller .map-bubble {
+  position: absolute;
+  left: -3.2rem;
+  top: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ef4444, #f43f5e);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(239,68,68,0.12);
+  transform: translateY(-6px);
+}
+
+/* active style for node */
+.map-scroller .map-node.is-active .map-bubble {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 14px 34px rgba(239,68,68,0.16);
+}
+
+/* mobile: make the scroller simpler and vertical */
+@media (max-width: 900px) {
+  .map-scroller { padding-left: 0.75rem; padding-right: 0.75rem; }
+  .map-scroller .map-line { left: 1rem; width: 4px; }
+  .map-scroller .map-bubble { left: -2.2rem; width: 44px; height: 44px; font-size: 14px; }
+  .map-scroller .map-node { margin: 2rem 0; }
+}
+
+/* reveal panel outline & spacing between top cards and reveal */
+.inline-reveal { margin-top: 2.5rem; }
+.inline-reveal .inline-reveal-inner { padding-top: 2rem; padding-bottom: 2rem; }
+
+/* small helper: responsive video container used by hero */
+.responsive-video {
+  position: relative;
+  overflow: visible;
+  border-radius: 24px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.08);
+  transform: translateZ(0);
+}
+.responsive-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+
+/* small header nav - mobile menu panel */
+.mobile-menu-panel {
+  position: absolute;
+  right: 12px;
+  top: 64px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.07);
+  padding: 12px;
+  z-index: 60;
+}
+
+/* form button small-screen */
+.btn-primary {
+  display:inline-flex;
+  align-items:center;
+  gap:.6rem;
+  background: linear-gradient(90deg,#ef4444,#f43f5e);
+  color:white;
+  padding:.9rem 1.2rem;
+  border-radius: 14px;
+  font-weight:700;
+  box-shadow: 0 10px 30px rgba(244,63,94,0.12);
+}
+
+/* make sure images in image-card are responsive */
+.image-card img{ width:100%; height:100%; object-fit:cover; display:block; border-radius: 12px; }
