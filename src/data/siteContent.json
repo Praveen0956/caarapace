@@ -1,0 +1,102 @@
+{
+  "site": {
+    "title": "Caarapace",
+    "email": "info@caarapace.com",
+    "copyright": "© 2025 CAARAPACE INC. All Rights Reserved."
+  },
+  "hero": {
+    "logoAlt": "Caarapace incorporation logo",
+    "bgImage": "/src/assets/hero.jpg",
+    "subtitleTop": "worm's-eye view photography of concrete building",
+    "title": "EmPowering Businesses with Innovative Tech Solutions",
+    "lines": [
+      "Custom Website | CRM Systems",
+      "Android APPs | Digital Marketing",
+      "all tailored to fuel your growth"
+    ]
+  },
+  "whatWeDo": {
+    "heading": "What We Do ?",
+    "subheading": "Build Fast | Launch Smart | Grow Big",
+    "items": [
+      {
+        "title": "We Build Vibe-Checked Websites",
+        "text": "No boring templates here—we craft custom websites that actually match your brand’s vibe. Whether you're launching a startup or leveling up your hustle, we design sites that look slick, load fast, and work like magic on any device. Let’s make your business look as cool online as it is IRL."
+      },
+      {
+        "title": "Custom CRMs That Just Get You",
+        "text": "Tired of clunky, off-the-shelf CRMs? Same. We build custom CRM systems that actually fit your workflow—no fluff, no fuss. Whether you're tracking leads, managing clients, or automating tasks, we’ve got you. It’s smooth, smart, and built just for you. Let your CRM work as hard as you do."
+      },
+      {
+        "title": "APPs That Slay—One TaP at a Time",
+        "text": "Got an idea? We turn it into a slick, scrollable, tap-worthy app. Whether it’s iOS, Android, or both—we build custom apps that look fresh, run smooth, and keep users hooked. From concept to code, we’ve got your back. Let’s launch something iconic."
+      },
+      {
+        "title": "Digital Marketing That Hits Different",
+        "text": "We don’t just run ads—we spark clicks, follows, and real results. From Insta to Google, we vibe with your brand and turn strategy into scroll-stopping magic. SEO, social, content, ads—we do it all, and we do it with style. Let’s make your brand unmissable."
+      }
+    ]
+  },
+  "about": {
+    "heading": "Innovative Solutions for Your Business Growth",
+    "text": "We don’t do boring. We do bold, fresh, and unapologetically creative. Whether it’s launching brands or shaking up the digital space, we bring the energy, the ideas, and the passion to make things happen. Ready to glow up your business? Let’s get this show on the road."
+  },
+  "servicesLong": {
+    "introTitle": "Yo, we're literally NOT your basic tech agency",
+    "introText": "At Caarapace, we don't just build websites - we craft chef's kiss, custom solutions that are giving main character energy for your business journey, From pixel-perfect websites that absolutely slay, to future-ready apps and CRMs that hit different.",
+    "items": [
+      {
+        "title": "Website Development – Your Digital Identity, Perfected",
+        "text": "At Caarapace, we craft websites that invite, engage, and convert. We don’t do cookie-cutter. Every line of code, every animation, every scroll is designed to make your audience feel: “Wow, this brand gets me.” Your website isn’t just a page—it’s your digital identity. We design and build sites that are pixel-perfect, responsive and conversion-focused."
+      },
+      {
+        "title": "CRM Development – Your Business Brain, Digitized",
+        "text": "We design Custom CRM systems that put everything in one place, so your team works smarter, faster, and happier. If your customer data is spread across spreadsheets, sticky notes, or 10 different tools, you’re losing time and money. Your business = your data."
+      },
+      {
+        "title": "Digital MARKETING Solutions – Your Brand, Amplified",
+        "text": "Being online isn’t enough anymore. You need to be visible, viral, and valuable. That’s where our digital solutions step in. We’re not just marketers—we’re growth hackers, storytellers, and brand architects."
+      },
+      {
+        "title": "App Development – From Idea to Icon",
+        "text": "We build apps that aren’t just used—they’re loved. From idea to App Store launch, we handle design, development and launch strategy so your app lands on home screens and stays there."
+      }
+    ],
+    "bullets": [
+      "Lightning-fast – optimized for speed & SEO.",
+      "Custom-tailored – every pixel aligned with your brand voice.",
+      "Responsive – flawless experience on mobile, tablet & desktop.",
+      "Interactive & Modern – animations and UI that wow your audience."
+    ],
+    "features": [
+      "Real-time insights – know your customers inside-out",
+      "Automation – save time, open, close and cook faster",
+      "Integration-ready – connect with your favorite tools.",
+      "Custom-built – no one-size-fits-all, fully tailored to your workflows."
+    ]
+  },
+  "careers": {
+    "title": "Join Our Team",
+    "intro": "Let's be real—this is a startup. 🚀 There will be challenges, late nights, and passionate debates about button colors. But also freedom, growth, and the opportunity to build something meaningful.",
+    "openings": [
+      { "title":"Web Development", "desc":"Join us to create innovative websites for our clients." },
+      { "title":"Digital Marketing", "desc":"Help businesses grow through effective digital marketing strategies." },
+      { "title":"Application Development", "desc":"Support businesses with advanced CRM solutions and customer management." },
+      { "title":"Full Stack Development", "desc":"Create robust websites and full-stack solutions." },
+      { "title":"Management Roles", "desc":"Guide strategy and growth." },
+      { "title":"Game Development", "desc":"For creative engine-builders and gameplay designers." }
+    ]
+  },
+  "cdeck": {
+    "title": "All-in-one Construction & Project Management Platform",
+    "intro": "C-Deck brings every tool a construction business needs into one powerful platform—keeping your finances, materials, projects, and communication organized, accessible, and perfectly in sync.",
+    "features": [
+      { "title": "Financial Management", "text": "Control finances with clarity and get visual analytics." },
+      { "title": "Workforce & Material Management", "text": "Centralize every construction resource — workers to suppliers." },
+      { "title": "Project Management System", "text": "Bird’s-eye view of every project with complete control." },
+      { "title": "Reports & Insights", "text": "Turn data into decisions with dynamic reports." }
+    ],
+    "cta": "Get in Touch",
+    "contactEmail": "info@caarapace.com"
+  }
+}
